@@ -25,28 +25,28 @@ const data = {
             description: 'Camiseta Bolsonaro Presidente para manifestações'
         },
         {
-            name: 'Camiseta Lula Livre',
-            slug: 'Camiseta Lula',
+            name: 'Camiseta Borussia Dortmund',
+            slug: 'Camiseta Borussia',
             category: 'Camiseta',
-            image: '/images/7681b55e8e32f3acbd819e0657410b85.jfif',
+            image: '/images/bc02827f70f7c4ff640abfdb741f7e21.jfif',
             price: 120,
             countInStock: 10,
-            brand: 'Lula',
+            brand: 'Borussia',
             rating: 4.5,
             numReviews: 10, 
-            description: 'Camiseta Lula Livre para manifestações'
+            description: 'Camiseta Time Borussia Dortmund'
         },
         {
-            name: 'Camiseta Lula Livre',
-            slug: 'Camiseta Lula',
+            name: 'Camiseta Vans',
+            slug: 'Camiseta Vans',
             category: 'Camiseta',
-            image: '/images/7681b55e8e32f3acbd819e0657410b85.jfif',
+            image: '/images/camisa-vans-otw-preta-100707-1.webp',
             price: 120,
             countInStock: 10,
-            brand: 'Lula',
+            brand: 'Vans',
             rating: 4.5,
             numReviews: 10, 
-            description: 'Camiseta Lula Livre para manifestações'
+            description: 'Camiseta Skate Vans'
         }
     ],
 };
