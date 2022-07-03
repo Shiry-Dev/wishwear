@@ -55,7 +55,7 @@ function HomeScreen(){
                     <p>{product.name}</p>
                   </Link>
                   <p><strong>R${product.price}</strong></p>
-                  <button>Add no carrinho</button>
+                  <button>Adicionar ao carrinho</button>
                 </div>
               </div>))
             )}

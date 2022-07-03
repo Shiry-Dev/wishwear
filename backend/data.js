@@ -40,7 +40,7 @@ const data = {
             name: 'Camiseta Vans',
             slug: 'Camiseta Vans',
             category: 'Camiseta',
-            image: '/images/camisa-vans-otw-preta-100707-1.webp',
+            image: '/images/Camisa-reserva-do-Borussia-Dortmund-2020-2021-PUMA-2-2.jpg',
             price: 120,
             countInStock: 10,
             brand: 'Vans',
