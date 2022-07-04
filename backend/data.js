@@ -1,6 +1,7 @@
 const data = {
     products: [
         {
+            _id: '1',
             name: 'Camiseta Lula Livre',
             slug: 'Camiseta Lula',
             category: 'Camiseta',
@@ -13,6 +14,7 @@ const data = {
             description: 'Camiseta Lula Livre para manifestações'
         },
         {
+            _id: '2',
             name: 'Camiseta Bolsonaro Presidente',
             slug: 'Camiseta Bolsonaro',
             category: 'Camiseta',
@@ -25,6 +27,7 @@ const data = {
             description: 'Camiseta Bolsonaro Presidente para manifestações'
         },
         {
+            _id: '3',
             name: 'Camiseta Borussia Dortmund',
             slug: 'Camiseta Borussia',
             category: 'Camiseta',
@@ -37,6 +40,7 @@ const data = {
             description: 'Camiseta Time Borussia Dortmund'
         },
         {
+            _id: '4',
             name: 'Camiseta Vans',
             slug: 'Camiseta Vans',
             category: 'Camiseta',
