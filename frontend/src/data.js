@@ -18,7 +18,7 @@ const data = {
             category: 'Camiseta',
             image: '/images/6e041179b8dfccbfb5c5be29454fe4bb.jfif',
             price: 120,
-            countInStock: 10,
+            countInStock: 0,
             brand: 'Bolsonaro',
             rating: 4.5,
             numReviews: 10, 

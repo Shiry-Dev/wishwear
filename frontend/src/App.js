@@ -1,14 +1,14 @@
-import {BrowserRouter, Link, Route, Routes} from 'react-router-dom';
-import HomeScreen from "./screens/HomeScreen";
-import ProductScreen from "./screens/ProductScreen";
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import HomeScreen from './screens/HomeScreen';
+import ProductScreen from './screens/ProductScreen';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
-import {LinkContainer} from 'react-router-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 
 function App() {
   return (
     <BrowserRouter>
-      <div className='d-flex flex-column site-container'>
+      <div className="d-flex flex-column site-container">
         <header>
           <Navbar bg="dark" variant="dark">
             <Container>
@@ -19,7 +19,7 @@ function App() {
           </Navbar>
         </header>
         <main>
-          <Container>
+          <Container className="mt-3">
             <Routes>
               <Route path="/product/:slug" element={<ProductScreen />} />
               <Route path="/" element={<HomeScreen />} />
@@ -27,7 +27,7 @@ function App() {
           </Container>
         </main>
         <footer>
-          <div className='text-center'>Todos os direitos reservados</div>
+          <div className="text-center">Todos os direito reservados</div>
         </footer>
       </div>
     </BrowserRouter>
