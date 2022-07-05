@@ -13,6 +13,8 @@ import { useContext } from 'react';
 import { Store } from './Store';
 import CartScreen from './screens/CartScreen';
 import SigninScreen from './screens/SigninScreen';
+import ShippingAddressScreen from './screens/ShippingAddressScreen';
+import SignupScreen from './screens/SignupScreen';
 
 function App() {
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -21,6 +23,7 @@ function App() {
   const signoutHandler = () => {
     ctxDispatch({ type: 'USER_SIGNOUT' });
     localStorage.removeItem('userInfo');
+    localStorage.removeItem('shippingAddress');
   };
   return (
     <BrowserRouter>
@@ -30,11 +33,11 @@ function App() {
           <Navbar bg="dark" variant="dark">
             <Container>
               <LinkContainer to="/">
-                <Navbar.Brand>amazona</Navbar.Brand>
+                <Navbar.Brand>WishWear</Navbar.Brand>
               </LinkContainer>
               <Nav className="me-auto">
                 <Link to="/cart" className="nav-link">
-                  Cart
+                  Carrinho
                   {cart.cartItems.length > 0 && (
                     <Badge pill bg="danger">
                       {cart.cartItems.reduce((a, c) => a + c.quantity, 0)}
@@ -44,10 +47,10 @@ function App() {
                 {userInfo ? (
                   <NavDropdown title={userInfo.name} id="basic-nav-dropdown">
                     <LinkContainer to="/profile">
-                      <NavDropdown.Item>User Profile</NavDropdown.Item>
+                      <NavDropdown.Item>Perfil</NavDropdown.Item>
                     </LinkContainer>
                     <LinkContainer to="/orderhistory">
-                      <NavDropdown.Item>Order History</NavDropdown.Item>
+                      <NavDropdown.Item>Hístorico de pedidos</NavDropdown.Item>
                     </LinkContainer>
                     <NavDropdown.Divider />
                     <Link
@@ -73,12 +76,17 @@ function App() {
               <Route path="/product/:slug" element={<ProductScreen />} />
               <Route path="/cart" element={<CartScreen />} />
               <Route path="/signin" element={<SigninScreen />} />
+              <Route path="/signup" element={<SignupScreen />} />
+              <Route
+                path="/shipping"
+                element={<ShippingAddressScreen />}
+              ></Route>
               <Route path="/" element={<HomeScreen />} />
             </Routes>
           </Container>
         </main>
         <footer>
-          <div className="text-center">All rights reserved</div>
+          <div className="text-center">Todos os direitos reservados</div>
         </footer>
       </div>
     </BrowserRouter>
