@@ -109,7 +109,7 @@ export default function PlaceOrderScreen() {
               <Card.Text>
                 <strong>Método de Pagamento:</strong> {cart.paymentMethod}
               </Card.Text>
-              <Link to="/payment">Edit</Link>
+              <Link to="/payment">Editar</Link>
             </Card.Body>
           </Card>
 
