@@ -85,7 +85,7 @@ export default function OrderScreen() {
                   Delivered at {order.deliveredAt}
                 </MessageBox>
               ) : (
-                <MessageBox variant="danger">Not Delivered</MessageBox>
+                <MessageBox variant="danger">Não Entregue</MessageBox>
               )}
             </Card.Body>
           </Card>
