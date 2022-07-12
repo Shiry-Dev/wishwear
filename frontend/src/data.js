@@ -47,6 +47,32 @@ const data = {
             rating: 4.5,
             numReviews: 10, 
             description: 'Camiseta Skate Vans'
+        },
+        {
+            //_id: '6',
+            name: 'Calça',
+            slug: 'Calça Jeans',
+            category: 'Calça',
+            image: '/images/2b36a76a146ed36b1369185b56138eb0.jpg',
+            price: 90,
+            countInStock: 5,
+            brand: 'Lee',
+            rating: 3.5,
+            numReviews: 3, 
+            description: 'Calça Jeans Lee'
+        },
+        {
+            //_id: '6',
+            name: 'Roupa dog',
+            slug: 'dog',
+            category: 'Animal',
+            image: '/images/CAMISA-TPT-LIBERTY-PETArtboard-1_3_250x.webp',
+            price: 50,
+            countInStock: 15,
+            brand: 'Rolinha',
+            rating: 4.0,
+            numReviews: 3, 
+            description: 'Roupa para seu melhor amigo'
         }
     ],
 };
